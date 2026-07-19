@@ -8,7 +8,7 @@ use Symfony\Component\Routing\Attribute\Route;
 class MainController
 {
     #[Route('/')]
-    public function homePage()
+    public function homepage(): Response
     {
         return new Response('<strong> Carbon Footprint Tracking</strong>: Compare your emissions against your peers!');
     }
